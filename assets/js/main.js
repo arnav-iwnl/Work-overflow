@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Ideation 2022";
+var txt = "Ideation 2023";
 var speed = 100;
 
 function typeWriter() {
@@ -75,22 +75,62 @@ function showSlides1(n) {
   dot1s[slideIndex1 - 1].className += " active";
 }
 
-var slideIndex = 0;
-showSlides();
+// var slideIndex = 0;
+// showSlides();
 
-function showSlides() {
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+
+//   slides[slideIndex - 1].style.display = "block";
+
+//   setTimeout(showSlides, 3000); // Change image every 2 seconds
+// }
+
+
+
+
+//Testimonials 
+let msgIndex=1;
+showMsg(msgIndex);
+
+
+// Next/previous controls
+function plusMsg(n) {
+  showMsg((msgIndex += n));
+}
+
+// Testimonial Msg controls
+function currentMsg(n) {
+  showMsg((msgIndex = n));
+}
+
+
+
+function showMsg(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  let msgs = document.getElementsByClassName("myMsg");
+  let dot1s = document.getElementsByClassName("dot1");
+  if (n > msgs.length) {
+    msgIndex = 1;
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  if (n < 1) {
+    msgIndex = msgs.length;
   }
-
-  slides[slideIndex - 1].style.display = "block";
-
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  for (i = 0; i < msgs.length; i++) {
+    msgs[i].style.display = "none";
+  }
+  for (i = 0; i < dot1s.length; i++) {
+    dot1s[i].className = dot1s[i].className.replace(" active", "");
+  }
+  msgs[msgIndex - 1].style.display = "block";
+  dot1s[msgIndex - 1].className += " active";
 }
