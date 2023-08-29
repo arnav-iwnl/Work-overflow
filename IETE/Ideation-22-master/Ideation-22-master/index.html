@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Ideation 2023</title>
+    <link rel="shortcut icon" href="./assets/img/logos/favicon.ico" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="typeWriter()" id="page-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top uk-visible@m shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="" href="./index.html">
+                <img width="150px" src="./assets/img/logos/Ideation logo.png" alt="" />
+            </a>
+
+            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                type="button" data-toggle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse boundary-align" id="navbarResponsive">
+                <ul class="nav navbar-nav uk-align-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rules">Rules</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="" target="_blank">Collaboration</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav list-unstyled">
+                    <li class="nav-item">
+                        <a class="uk-button-default btn-outline-info nav-link text-white btn-reg text-center"
+                            target="_blank" href="https://forms.gle/bU8BUNK9jszss9bM6">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top uk-hidden@m" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img width="150px" class="p-2"
+                    src="./assets/img/logos/Ideation logo.png" alt="" /></a>
+
+            <button class="uk-button-default uk-margin-small-right" type="button"
+                uk-toggle="target: #offcanvas-nav-primary">
+                <span class="text-white" uk-icon="icon: menu"></span>
+            </button>
+
+            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true;">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    <ul class="uk-nav uk-nav-primary uk-nav-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rules">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_b">Collaboration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video">Video</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item register-nav">
+                            <a class="nav-link text-white" href="https://forms.gle/bU8BUNK9jszss9bM6"
+                                uk-toggle>Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="slider uk-flex uk-flex-center uk-flex-middle">
+            <div class="content-bg">
+                <div class="content">
+                    <div class="text-center">
+                        <p class="display-3 text-white font-weight-bolder mb-0" id="ideation"></p>
+                        <div class="timer-container container">
+                            <div class="uk-width-1-1 h-100 uk-flex uk-flex-middle uk-flex-center">
+                                <div class="uk-text-center">
+                                    <div class="uk-inline timer">
+                                        <div id="days" class="display-4 text-center text-light font-weight-bold mytime">
+                                        </div>
+                                        <div id="day" class="display-5 text-center text-light mytimedescription">
+                                            Days
+                                        </div>
+                                    </div>
+                                    <span class="display-4 text-center text-light font-weight-bold colon">:</span>
+                                    <div class="uk-inline timer">
+                                        <div id="hours"
+                                            class="display-4 text-center text-light font-weight-bold mytime colon">
+                                        </div>
+                                        <div id="hour" class="display-5 text-center text-light mytimedescription">
+                                            Hours
+                                        </div>
+                                    </div>
+                                    <span class="display-4 text-center text-light font-weight-bold colon">:</span>
+                                    <div class="uk-inline timer">
+                                        <div id="minutes"
+                                            class="display-4 text-center text-light font-weight-bold mytime"></div>
+                                        <div id="minute" class="display-5 text-center text-light mytimedescription">
+                                            Mins
+                                        </div>
+                                    </div>
+                                    <span class="display-4 text-center text-light font-weight-bold colon">:</span>
+                                    <div class="uk-inline timer">
+                                        <div id="seconds"
+                                            class="display-4 text-center text-light font-weight-bold mytime"></div>
+                                        <div id="second" class="display-5 text-center text-light mytimedescription">
+                                            Sec
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p class="h3 text-white">Time | Date</p> <br> -->
+                        <a class="uk-button uk-button-default btn-outline-info btn-xl text-uppercase register-now"
+                            role="button" href="">Register now!</a>
+                        <br /><br /><br /><br />
+                        <div>
+                            <p class="text-white">
+                                An Event by
+                                <span class="font-weight-bolder uk-text-primary">IETE Students’ Forum, and EDC
+                                    SIESGST</span>
+                            </p>
+                            <div>
+                                <img width="80px" class="bg-white p-2 rounded-circle" src="./assets/img/logos/iete.png"
+                                    alt="" />
+                                <img width="101px" class="bg-white p-2" src="./assets/img/logos/gst.png" alt="" />
+                                <img width="100px" class="bg-white p-1" src="./assets/img/logos/edclogo.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <!-- <div>
+                <h1 class="text-white">X</h1>
+              </div>
+              <div>
+                <p class="text-white">
+                  In Collaboration with
+                  <span class="font-weight-bolder uk-text-primary"
+                    >Blue Ribbon Movement</span
+                  >
+                </p>
+                <img
+                  width="200px"
+                  class="p-2"
+                  src="./assets/img/logos/BRM logo.jpeg"
+                  alt=""
+                />
+              </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a class="toptop btn btn-sm btn-dark" href="" uk-totop uk-scroll></a>
+
+    <section id="about">
+        <div class="about">
+            <div class="about-ideation">
+                <h1 class="about-heading" style="color: white;">About Ideation</h1>
+                <!-- <hr class="custom-hr uk-align-center" id="line"> -->
+                <h4 class="down-arrow">. <br>
+                    . <br>
+                    .<br>
+                    . <br>
+                    <i class='bx bx-chevron-down'></i>
+                </h4>
+            </div>
+            <div class="about-section">
+                <div class="uk-flex uk-flex-middle about-slider"></div>
+                <p class="about-info">
+                    <strong class="text-uppercase" style="color: #f2a70d; font-size: 24px">Ideation</strong>,
+                    provides a common platform for great thinkers and enthusiasts to
+                    come up with technically productive and creative ideas. It is a
+                    medium through which students can
+                    <strong class="" style="color: #f2a70d; font-size: medium">brainstorm solutions for real-life
+                        problem statements</strong>. Our aim is to give back to the society what is taught to us,
+                    and
+                    inculcate technology in real-life problem solutions for the
+                    betterment of the society. The solutions can be taken up as a
+                    firsthand project in the future. The participants will be given a
+                    problem statement which will be relevant to the society and they
+                    will be given time to bridge the gaps that our
+                    <strong class="" style="color: #f2a70d; font-size: medium">NGO partners</strong>
+                    face to implement such ideas. At the end of the session the
+                    participants have to present their ideas and the most appropriate,
+                    optimal, practical and unique idea wins the competition.The winners
+                    will be given
+                    <strong class="" style="color: #f2a70d; font-size: medium">cash prizes and goodies</strong>. The
+                    participants can be from various technical backgrounds.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section" id="schedule">
+        <div class="rules">
+            <h1 style="color: white;">Schedule</h1>
+            <h4 class="down-arrow">. <br>
+                . <br>
+                . <br>
+                . <br>
+                <i class='bx bx-chevron-down'></i>
+            </h4>
+            <!-- <hr class="custom-hr uk-align-center" id="line"> -->
+        </div>
+        <h1 style="text-align:center; font-size: 30px; color: white; padding: 25px 0;">To be announced soon...</h1>
+        <!-- <div class="timeline">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="timeline-container">
+                            <div class="timeline-continue">
+                                <div class="row timeline-left">
+                                    <div class="col-md-6 d-md-none d-block">
+                                        <p class="timeline-date">
+                                            9:30 AM
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="timeline-box">
+                                            <div class="timeline-text">
+                                                <h3> Inauguration </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-md-block d-none">
+                                        <p class="timeline-date">
+                                            9:30 AM
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row timeline-right">
+                                    <div class="col-md-6">
+                                        <p class="timeline-date">
+                                            11:00 AM
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="timeline-box">
+                                            <div class="timeline-text">
+                                                <h3>Paper Presentation
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row timeline-left">
+                                    <div class="col-md-6 d-md-none d-block">
+                                        <p class="timeline-date">
+                                            1:30 PM
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="timeline-box">
+                                            <div class="timeline-text">
+                                                <h3> Lunch Break</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-md-block d-none">
+                                        <p class="timeline-date">
+                                            1:30 PM
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row timeline-right">
+                                    <div class="col-md-6">
+                                        <p class="timeline-date">
+                                            2:30 PM
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="timeline-box">
+                                            <div class="timeline-text">
+                                                <h3> Valedictory Function
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+    </section>
+
+    <section class="rule" id="rules">
+        <div class="rules">
+            <h1 style="color: white;">Rules</h1>
+            <h4 class="down-arrow">. <br>
+                . <br>
+                . <br>
+                . <br>
+                <i class='bx bx-chevron-down'></i>
+            </h4>
+            <!-- <hr class="custom-hr uk-align-center" id="line"> -->
+        </div>
+        <div class="rule-content">
+            <div class="rule-desc">
+                <p><i class='bx bxs-circle'></i>All participants must strictly follow the schedule attached, to avoid
+                    delays and inconveniences.</p>
+                <p><i class='bx bxs-circle'></i>Event Coordinators have been assigned, Participants can approach them
+                    in case of any distress or
+                    issues. </p>
+                <p><i class='bx bxs-circle'></i>Kindly do not leave the assigned meet. If you need anything, please
+                    approach the Event
+                    coordinators. </p>
+                <p><i class='bx bxs-circle'></i>Participants must upload their presentation on the given Google drive
+                    link.(Link will be posted in
+                    WhatsApp group). </p>
+                <p><i class='bx bxs-circle'></i>Participants must be ready with their presentations by the given time
+                    i.e. before the first round of
+                    judging begins. </p>
+                <p><i class='bx bxs-circle'></i>Since the event is being conducted online, all participants are
+                    required to have stable internet
+                    connection for the entirety of the event. </p>
+                <p><i class='bx bxs-circle'></i>All participants are requested to stay within the meet till the end of
+                    the program. Participation
+                    certificates would be distributed only during the valedictory ceremony.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="videos">
+            <h1 style="color: white;">Videos</h1>
+            <h4 class="down-arrow">. <br>
+                . <br>
+                . <br>
+                . <br>
+                <i class='bx bx2 bx-chevron-down'></i>
+            </h4>
+        </div>
+
+
+        <div class="slideshow-container1">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides1 fade1">
+                <div class="numbertext">1 / 3</div>
+                <video class="video1" src="./assets/Aditi Sawant.mp4" controls=""></video>
+
+                <div class="text">Video1</div>
+            </div>
+
+            <div class="mySlides1 fade1">
+                <div class="numbertext">2 / 3</div>
+                <video class="video1" src="./assets/Aditi Sawant.mp4" controls=""></video>
+
+                <div class="text">Video2</div>
+            </div>
+
+            <div class="mySlides1 fade1">
+                <div class="numbertext">3 / 3</div>
+                <video class="video1" src="./assets/videos/Aditi Sawant.mp4" controls=""></video>
+
+                <div class="text">Video3</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dot1s/circles -->
+        <div style="text-align:center">
+            <span class="dot1" onclick="currentSlide1(1)"></span>
+            <span class="dot1" onclick="currentSlide1(2)"></span>
+            <span class="dot1" onclick="currentSlide1(3)"></span>
+        </div>
+        </div>
+    </section>
+
+    <section class="sponsor">
+
+        <div class="sponsor">
+            <div class="sponsor-ideation">
+                <h1 class="Sponsor-heading" style="color: white;">Our Sponsors</h1>
+                <!-- <hr class="custom-hr uk-align-center" id="line"> -->
+                <h4 class="down-arrow">. <br>
+                    . <br>
+                    . <br>
+                    . <br>
+                    <i class='bx bx-chevron-down'></i>
+                </h4>
+
+            </div>
+            <h1 style="text-align:center; font-size: 30px; color: white; padding: 25px 0;">To be announced soon...</h1>
+            <!-- <div class="sponsor-content">
+                <div class="sponsor-container">
+
+                    <img src="./assets/img/logos/logobulb.png" alt="">
+                </div>
+                <div class="sponsor-desc">
+                    <strong class="text-uppercase" style="color: #f2a70d; font-size: 24px">HAVE</strong> you seen
+                    political debates and
+                    discussion on TV about Air
+                    pollution? Do you think it would
+                    really solve the problem?<span style="color: #f2a70d;"> NEVER</span>, because problems don't get
+                    resolved through discussions they get
+                    resolved through actions. That's why we made <span style="color: #f2a70d;">RIDENET</span>, where we
+                    are trying to bring all responsible
+                    citizens who want to make a difference on to one digital platform to address <span
+                        style="color: #f2a70d;">the ever growing
+                        problem of traffic and air pollution through ridesharing</span>, it is one of the most practical
+                    solutions
+                    where we can share empty seats of our car or bike with someone traveling in the same route and
+                    share the travel cost with them. <span style="color: #f2a70d;">ONLY VERIFIED MEMBERS ARE ALLOWED TO
+                        RIDESHARE. FEMALE MEMBERS CAN
+                        CHOOSE TO SHARE RIDE WITH FEMALE</span>. <a href="">Learn more.</a>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+
+    <section id="testimonials">
+
+ 
+        <div class="testimonials-ideation">
+            <h1 class="tm-heading">Testimonials</h1>
+            <h4 class="down-arrow">. <br>
+                . <br>
+                . <br>
+                . <br>
+                <i class='bx bx2 bx-chevron-down'></i>
+            </h4>
+        </div>
+        <div class="tm-content">        
+         <div class="msg-container">
+            <div class="myMsg box">
+                <div class="msg-head">
+                    <h3><q> Helped to Broaden Our Ideas💡 </q></h3>
+                    <h6>1/4</h6>
+                </div>
+                <div class="msg-content">
+                    <p>I have attended the ideation event and it was really good. It helps to broaden
+                        our ideas and point of views also facing various kind of new ideas and winning through that
+                        gives us
+                        great experience </p>
+                    <br>
+                    <h5 class="signature">
+                        <i>~Shubham Bhagwat</i>
+                    </h5>
+                </div>
+
+            </div>
+            <div class="myMsg box">
+                <div class="msg-head">
+                    <h3><q> Better Understanding of What We're Capable of as a Team🎯 </q></h3>
+                    <h6>2/4</h6>
+                </div>
+                <div class="msg-content">
+                    <p>The Ideation event was great! It's helped us to broaden our ideas and point of views, and it's
+                        also given us experience in facing various kinds of new ideas and winning through that. We've
+                        learned a lot from this event, and it has given us a much better understanding of what we're
+                        capable of as a team. </p>
+                    <br>
+                    <h5 class="signature">
+                        <i>~Kruti Upasani</i>
+                    </h5>
+                </div>
+
+            </div>
+            <div class="myMsg box">
+                <div class="msg-head">
+                    <h3><q> Hack the Ordinary: Ideation Event Unlocked! 🔐🚀 </q></h3>
+                    <h6>3/4</h6>
+                </div>
+                <div class="msg-content">
+                    <p>Teams with different mindsets and idea approaches were there, and we really had a lot of fun to
+                        participate in this event </p>
+                    <br>
+                    <h5 class="signature">
+                        <i>~Dhiraj Shelke</i>
+                    </h5>
+                </div>
+
+            </div>
+            <div class="myMsg box">
+                <div class="msg-head">
+                    <h3><q> Ideation : Turning Curiosity into Excitment 🎉 </q></h3>
+                    <h6>4/4</h6>
+                </div>
+                <div class="msg-content">
+                    <p>I had a lot of fun at Ideation. I came with a team that was mostly made up of people who were
+                        used to working in a more traditional way, and we were excited to try something new. It was
+                        interesting to see how different teams approached the problems from different angles, and it was
+                        exciting to see what everyone could come up with when they tried something new! </p>
+                    <br>
+                    <h5 class="signature">
+                        <i>~Varad thorat</i>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot1" onclick="currentMsg(1)"></span>
+            <span class="dot1" onclick="currentMsg(2)"></span>
+            <span class="dot1" onclick="currentMsg(3)"></span>
+            <span class="dot1" onclick="currentMsg(4)"></span>
+        </div>
+     </div>
+    </section>
+
+
+
+    <section id="team">
+        <div class="team-photo">
+            <div class="team-ideation">
+                <h1 class="tm-heading">Our Team</h1>
+                <h4 class="down-arrow">. <br>
+                    . <br>
+                    . <br>
+                    . <br>
+                    <i class='bx bx2 bx-chevron-down'></i>
+                </h4>
+            </div>
+
+            <img src="./assets/img/team-pic.jpeg" alt="Team Photograph" class="tm-iete">
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <div class="Contact-us">
+                <h1 style="color: white;">Contact Us</h1>
+                <h4 class="down-arrow">. <br>
+                    . <br>
+                    . <br>
+                    . <br>
+                    <i class='bx bx-chevron-down'></i>
+                </h4>
+                <!-- <hr class="custom-hr uk-align-center" id="line"> -->
+            </div>
+            <div class="contact-content">
+                <div class="contact-img">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7543.104394394796!2d73.01942760712097!3d19.03944424643569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db5e2c85cd%3A0xef26c52d7d73816e!2sSIES%20Graduate%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1597752442292!5m2!1sen!2sin"
+                            width="100%" height="100%" frameborder="0"
+                            style="border: 0; box-shadow: 0 8px 16px rgba(255,255,255, 0.4)" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="contact-desc">
+                    <a class="navbar-brand" href="./index.html">
+                        <img width="150px" src="./assets/img/logos/Ideation logo.png" alt="" />
+                    </a>
+
+                    <p>The IETE and Ideation logo is copyright under IETE.ORG <br>
+                        ISF SIESGST operates independently under IETE.ORG</p>
+
+                    <p>Site Designed & Maintained by : Technical Team @IETESIESGST</p>
+                    <p><i class='bx bx-envelope' style='margin-right: 5px;'></i>Email: iete-council@siesgst.ac.in <br>
+                        <i class='bx bx-phone'></i>+91 94237 76633 <br>
+                        <i class='bx bx-phone'></i>+91 98923 01801
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-container">
+            <a class="copyright" href="./privacy-policy.html">Copyright 2023 | Ideation</a>
+            <div class="logos">
+                <a href=#><i class='bx bx1 bxl-google-plus-circle'></i></a>
+                <a href=""><i class='bx bx1 bxl-twitter'></i></a>
+                <a href=""><i class='bx bx1 bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bx1 bxl-instagram-alt'></i></a>
+            </div>
+            <p class="term">Term of use | Technical Team @IETESIESGST</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
