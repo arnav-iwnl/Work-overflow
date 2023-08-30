@@ -472,9 +472,6 @@ h5 {
   margin-top: 20px;
 }
 /* testimonials ---------------------------------------- */
-#testimonials{
-display: inline-block;
-}
 .testimonials-ideation{
   color: white;
   text-align: center;
@@ -586,7 +583,9 @@ footer {
   .mytimedescription {
     font-size: 18px;
   }
-
+  #testimonials{
+    display: inline-block;
+  }
   .timer {
     width: 60px;
   }
@@ -656,7 +655,9 @@ footer {
     font-size: 45px !important;
     height: 54px !important;
   }
-
+  #testimonials{
+    display: inline-block;
+  }
   .mytime {
     font-size: 45px !important;
   }
@@ -696,6 +697,7 @@ footer {
     /* padding: 40px; */
     width: 500px;
   }
+ 
   .footer-container {
     display: flex !important;
     flex-direction: row;
@@ -717,7 +719,9 @@ footer {
     height: auto;
     aspect-ratio: 103/83;
   }
-
+  #testimonials{
+    display: inline-block;
+  }
   .contact-content {
     display: flex;
     flex-direction: column;
@@ -744,6 +748,9 @@ footer {
     width: 100%;
     height: auto;
     aspect-ratio: 103/83;
+  }
+  #testimonials{
+    display: inline-block;
   }
   .sponsor-desc {
     width: 100%;
@@ -980,7 +987,9 @@ footer {
   .timeline .timeline-launch {
     text-align: left;
   }
-
+  #testimonials{
+    display: inline-block;
+  }
   .timeline .row.timeline-left .timeline-date::after,
   .timeline .row.timeline-right .timeline-date::after {
     left: 47px;
