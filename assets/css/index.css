@@ -472,7 +472,9 @@ h5 {
   margin-top: 20px;
 }
 /* testimonials ---------------------------------------- */
-
+#testimonials{
+display: inline-block;
+}
 .testimonials-ideation{
   color: white;
   text-align: center;
